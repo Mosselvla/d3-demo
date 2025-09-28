@@ -1,4 +1,6 @@
-<button [routerLink]=""><h1 class="h1">D3 Demo</h1></button>
-<button [routerLink]="'tree'">Tree</button>
-
+<h1 class="h1">D3 Demo</h1>
+<div class="flex flex-row w-full gap-4">
+    <button [routerLink]="'tree'">Tree</button>
+    <button [routerLink]="'sierpinski'">Sierpinski</button>
+</div>
 <router-outlet></router-outlet>
