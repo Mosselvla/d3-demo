@@ -1,0 +1,54 @@
+<div class="flex flex-row w-full">
+    <div class="flex flex-col w-1/3">
+        <div class="flex flex-row">
+            <button (click)="decreaseRecursion1Mod()">&lt;&lt;</button>
+            Recursion 1 mod: {{ recursion1AngleMod }}
+            <button class="" (click)="increaseRecursion1Mod()">&gt;&gt;</button>
+        </div>
+        <div class="flex flex-row">
+            <button (click)="decreaseRecursion2Mod()">&lt;&lt;</button>
+            Recursion 2 mod: {{ recursion2AngleMod }}
+            <button class="" (click)="increaseRecursion2Mod()">&gt;&gt;</button>
+        </div>
+    </div>
+    <div class="flex flex-col w-1/3">
+        <div class="flex flex-row">
+            <button (click)="decreaseDepth()">&lt;&lt;</button>
+            Depth: {{ depth }}
+            <button class="" (click)="increaseDepth()">&gt;&gt;</button>
+        </div>
+        <div class="flex flex-row">
+            <button (click)="decreaseLengthBase()">&lt;&lt;</button>
+            Length base: {{ lengthBase }}
+            <button class="" (click)="increaseLengthBase()">&gt;&gt;</button>
+        </div>
+    </div>
+    <div class="flex flex-col w-1/3">
+        <div class="flex flex-row">
+            Color:
+            <select [formControl]="selectColor">
+                <option value="brbg">Blue / Brown</option>
+                <option value="gnbu">Blue / Green</option>
+                <option value="blues">Blues</option>
+                <option value="cividis">Cividis</option>
+                <option value="cool">Cool</option>
+                <option value="bugn">Green / Blue</option>
+                <option value="greens">Greens</option>
+                <option value="inferno">Inferno</option>
+                <option value="magma">Magma</option>
+                <option value="piyg">Pink / Yellow / Green</option>
+                <option value="plasma">Plasma</option>
+                <option value="bupu">Purple / Blue</option>
+                <option value="rainbow">Rainbow</option>
+                <option value="orrd">Red / Orange</option>
+                <option value="rdylbu">Red / Yellow / Blue</option>
+                <option value="rdylgn">Red / Yellow / Green</option>
+                <option value="reds">Reds</option>
+                <option value="spectral">Spectral</option>
+                <option value="turbo">Turbo</option>
+            </select>
+        </div>
+    </div>
+</div>
+<button (click)="downloadSVG()">Download SVG</button>
+<svg width="1100" height="1100"></svg>
